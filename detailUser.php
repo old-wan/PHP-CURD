@@ -1,19 +1,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>查看用户明细</title>
-</head>
+  <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     <title>查看用户明细</title>
+  </head>
 <body>
 <?php 
-require_once 'inc/dbConn.php';
-$userId=$_GET['id'];
-//设置中国时区。。
-  date_default_timezone_set("PRC");
-//读数据。。。
-  $sql = "select * from user where id=".$userId;
-  $result = mysql_query($sql,$con);
-  $user = mysql_fetch_array($result);
+  require_once 'inc/dbConn.php';
+  $userId=$_GET['id'];
+  //设置中国时区。。
+    date_default_timezone_set("PRC");
+  //读数据。。。
+    $sql = "select * from user where id=".$userId;
+    $result = mysql_query($sql,$con);
+    $user = mysql_fetch_array($result);
 ?>
     <table width="444" border="1" align="center">
        <tr>

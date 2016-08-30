@@ -1,7 +1,7 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>会员信息列表</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>会员信息列表</title>
 </head>
   <body>
     <table border="1" cellspacing="0" cellpadding="0" id="userList" align="center">
@@ -18,10 +18,9 @@
     <td>操作</td>
    </tr>
 <?php
-require_once 'inc/dbConn.php';
-//这是啥东东。。
-date_default_timezone_set("PRC");
-//读数据。。。
+  require_once 'inc/dbConn.php';
+  date_default_timezone_set("PRC");
+  //读数据。。。
   $sql = "select * from user order by id asc";
   $result = mysql_query($sql,$con);
   $userList = '';

@@ -19,11 +19,11 @@
       $rows = mysql_affected_rows();
       // 返回影响行数
       return $rows;
-  }
-  function alert($title){
-      echo "<script type='text/javascript'>alert('$title');</script>";
-  }
-  function href($url){
-      echo "<script type='text/javascript'>window.location.href='$url'</script>";
-  }
+    }
+    function alert($title){
+        echo "<script type='text/javascript'>alert('$title');</script>";
+    }
+    function href($url){
+        echo "<script type='text/javascript'>window.location.href='$url'</script>";
+    }
 ?>
